@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.paper {
+  padding: 20px 16px;
+  border-radius: 3px;
+  border: $element_border;
+  box-shadow: 0 2px 4px 0 $element_border-color;
+  transition: box-shadow .3s ease;
+  &:hover {
+    box-shadow: 0 4px 10px 0 $element_border-color;
+  }
+}

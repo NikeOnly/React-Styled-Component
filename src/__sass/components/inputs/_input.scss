@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.input {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  height: $element-height;
+  font-size: ($element-height - 10px) * 0.7;
+  font-weight: 400;
+  line-height: $element-height - 10px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  color: $font-color;
+  background: white;
+  border: $element_border;
+  border-image: initial;
+  border-radius: 3px;
+  vertical-align: baseline;
+  cursor: auto;
+  user-select: text;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-align: start;
+  -webkit-appearance: textfield;
+  -webkit-rtl-ordering: logical;
+  &:disabled {
+    cursor: not-allowed;
+    color: $disabled-element_text-color;
+    background-color: $disabled-element_background-color;
+  }
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 10px $primary-color;
+  }
+}
