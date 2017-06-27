@@ -1,5 +1,3 @@
-@import "_react-md/react-md";
-
 html, body {
   height: 100%;
   background: white;
@@ -7,11 +5,11 @@ html, body {
 
 a,
 a:visited {
-  color: $md-blue-500;
+  color: #2196F3;
   text-decoration: none;
   &:hover,
   &:active {
-    color: lighten($md-blue-500, 10%);
+    color: lighten(#2196F3, 10%);
   }
 }
 
