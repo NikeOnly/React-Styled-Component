@@ -34,8 +34,7 @@ gulp.task('copy-assets', function () {
 
 // Styles
 gulp.task('build-styles', function () {
-    // return sass(ROOT_SASS_DIR + '/all-styles.scss', {style: 'expanded', sourcemap: isDev})
-    return sass(ROOT_SASS_DIR + '/all-styles.scss', {style: 'expanded', sourcemap: false})
+    return sass(ROOT_SASS_DIR + '/all-styles.scss', {style: 'expanded', sourcemap: isDev})    
         .pipe(gulpif(isDev, rename({basename: 'app'})))
         .pipe(gulpif(!isDev, rename({basename: 'app-' + buildUtils.hashCode(new Date())})))
         .pipe(gulpif(isDev, sourcemaps.write('./maps')))
